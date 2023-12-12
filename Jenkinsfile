@@ -23,12 +23,12 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: 'Umair',
-                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/myapp/')],
-                         
+                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/myapp')],
+                
                         )
                     ]
                 )
             }
-        }
-    }
+        }
+    }
 }
